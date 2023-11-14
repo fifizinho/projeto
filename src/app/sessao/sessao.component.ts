@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
 export class SessaoComponent {
   Comprar(){
     Swal.fire({
-      title: "Vc deseja escolher ela mesmo?",
+      title: "Vc deseja comprar esse produto?",
       showDenyButton: true,
       icon: "question",
       confirmButtonText: "Sim",
@@ -17,9 +17,9 @@ export class SessaoComponent {
     }).then((result) => {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
-        Swal.fire("Artista escolhido com sucesso!", "", "success");
+        Swal.fire("Produto comprado com sucesso", "", "success");
       } else if (result.isDenied) {
-        Swal.fire("Erro ao escolher o Artista", "", "info");
+        Swal.fire("Erro ao comprar", "", "info");
       }
     });
   }
