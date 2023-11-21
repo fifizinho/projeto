@@ -1,0 +1,11 @@
+{
+    "produtos":[
+        {
+            "img": "../../assets/614462.webp",
+            "nome": "Alface americano 250g",
+            "valor": 30.99,
+            "descricao":"Alface americano natural",
+            "id": 1
+        }
+    ]
+}
